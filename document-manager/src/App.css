@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #0ea5e9);
+  color: #e2e8f0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(14,165,233,0.2);
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+  background: linear-gradient(90deg, #38bdf8, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.search {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+  background: rgba(255,255,255,0.08);
+  color: white;
+  outline: none;
+}
+
+.upload-box {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+  padding: 15px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+}
+
+.upload-box input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.08);
+  color: white;
+  border: none;
+}
+
+.upload-box button,
+.upload-btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #0ea5e9, #2563eb);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.file-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255,255,255,0.06);
+  border-radius: 14px;
+  padding: 15px;
+  backdrop-filter: blur(12px);
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.file-name {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #cbd5f5;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions a {
+  text-decoration: none;
+  color: #38bdf8;
+}
+
+.actions button {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  border: none;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.choose-btn {
+  background: rgba(255,255,255,0.05);
+  color: #e5e7eb;
+  border: 1px dashed #38bdf8;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.choose-btn:hover {
+  background: rgba(56,189,248,0.1);
+}
+
+.file-name-text {
+  font-size: 13px;
+  color: #94a3b8;
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.preview {
+  width: 60px;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(14,165,233,0.4);
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(14,165,233,0.6);
+}
